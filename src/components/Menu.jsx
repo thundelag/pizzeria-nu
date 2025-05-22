@@ -65,14 +65,13 @@ const Menu = () => {
       price: 14.99,
       category: 'classic',
       image: 'https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80'
-    },
-    {
+    },    {
       id: 3,
       name: 'Vegetarian',
       description: 'Tomato sauce, mozzarella, bell peppers, mushrooms, onions, and olives',
       price: 13.99,
       category: 'vegetarian',
-      image: 'https://images.unsplash.com/photo-1604917877934-07d8d248d382?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80'
+      image: 'https://images.unsplash.com/photo-1511689841353-d5e22ec7c6e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80'
     },
     {
       id: 4,
@@ -97,14 +96,13 @@ const Menu = () => {
       price: 17.99,
       category: 'vegetarian',
       image: 'https://images.unsplash.com/photo-1595708684082-a173bb3a06c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80'
-    },
-    {
+    },    {
       id: 7,
       name: 'Hawaiian',
       description: 'Tomato sauce, mozzarella, ham, and pineapple',
       price: 15.99,
       category: 'classic',
-      image: 'https://images.unsplash.com/photo-1574158622681-4f3e6f3a7f3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
+      image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
     },
     {
       id: 8,
@@ -112,7 +110,7 @@ const Menu = () => {
       description: 'Spicy buffalo sauce, mozzarella, grilled chicken, and blue cheese dressing',
       price: 16.99,
       category: 'specialty',
-      image: 'https://images.unsplash.com/photo-1604908742028-7a7a7a7a7a7a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
+      image: 'https://images.unsplash.com/photo-1571066811602-716837d681de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
     },
     {
       id: 9,
@@ -120,7 +118,7 @@ const Menu = () => {
       description: 'Pesto sauce, mozzarella, sun-dried tomatoes, artichokes, and olives',
       price: 14.99,
       category: 'vegetarian',
-      image: 'https://images.unsplash.com/photo-1595708684082-a173bb3a06c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80'
+      image: 'https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80'
     }
   ];
   const handleAddToCart = (pizza) => {
