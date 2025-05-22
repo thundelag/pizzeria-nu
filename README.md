@@ -1,5 +1,26 @@
 # Pizzeria NU - React + Vite + Tailwind CSS
 
+```
+/src
+  /assets         # Static assets like images
+  /components     # Reusable React components
+    - Header.jsx  # Site navigation with mobile menu
+    - Hero.jsx    # Hero section
+    - Menu.jsx    # Pizza menu with category filtering
+    - About.jsx   # About us section
+    - Testimonials.jsx # Customer testimonials with carousel
+    - ContactForm.jsx # Contact form with validation
+    - Footer.jsx  # Site footer
+    - Cart.jsx    # Shopping cart functionality
+    - CheckoutForm.jsx # Checkout form with validation
+    - Notification.jsx # Notification system
+  /context        # React context
+    - CartContext.jsx # Cart state management
+  App.jsx         # Main App component
+  main.jsx        # Application entry point
+  index.css       # Global styles
+```
+
 This is a modern pizza restaurant website built with:
 - [React](https://react.dev/)
 - [Vite](https://vitejs.dev/)
@@ -11,6 +32,13 @@ This is a modern pizza restaurant website built with:
 - Modern UI with Tailwind CSS
 - Component-based architecture
 - Fast development with Vite
+- Shopping cart functionality with item count display
+- Checkout form with validation
+- Notification system with auto-dismiss
+- Responsive testimonials with carousel for mobile
+- Menu with category filtering (Classic, Specialty, Vegetarian)
+- Smooth scrolling navigation
+- Contact form with validation
 
 ## Getting Started
 
@@ -45,9 +73,12 @@ npm run dev
 /src
   /assets         # Static assets like images
   /components     # Reusable React components
-    - Header.jsx  # Site navigation
+    - Header.jsx  # Site navigation with mobile menu
     - Hero.jsx    # Hero section
     - Menu.jsx    # Pizza menu
+    - About.jsx   # About us section
+    - Testimonials.jsx # Customer testimonials
+    - ContactForm.jsx # Contact form with validation
     - Footer.jsx  # Site footer
   App.jsx         # Main App component
   main.jsx        # Application entry point
