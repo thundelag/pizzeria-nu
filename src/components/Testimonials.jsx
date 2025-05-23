@@ -1,10 +1,16 @@
 import React, { useState, useEffect } from 'react';
+import useImageWithFallback from '../hooks/useImageWithFallback';
+import Image from './Image';
 
 const TestimonialCard = ({ name, image, quote, rating }) => {
   return (
     <div className="bg-white rounded-lg shadow-md p-6 transform transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
       <div className="flex items-center mb-4">
-        <img src={image} alt={name} className="h-12 w-12 rounded-full object-cover" />
+        <Image 
+          src={image} 
+          alt={name} 
+          className="h-12 w-12 rounded-full object-cover" 
+        />
         <div className="ml-4">
           <h4 className="text-lg font-medium text-gray-900">{name}</h4>
           <div className="flex mt-1">

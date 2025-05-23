@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { useCart } from '../context/CartContext';
 import CheckoutForm from './CheckoutForm';
+import Image from './Image';
+import PizzaPlaceholder from './PizzaPlaceholder';
+import { getImageUrl } from '../utils/imageUtils';
 
 const Cart = ({ isOpen, onClose }) => {
   const { cartItems, updateQuantity, removeFromCart, showNotification } = useCart();
@@ -49,16 +52,26 @@ const Cart = ({ isOpen, onClose }) => {
                       <ul className="-my-6 divide-y divide-gray-200">
                         {cartItems.length > 0 ? (
                           cartItems.map((item) => (
-                            <li key={item.id} className="py-6 flex">
-                              <div className="flex-shrink-0 w-24 h-24 border border-gray-200 rounded-md overflow-hidden">
+                            <li key={item.id} className="py-6 flex">                              <div className="flex-shrink-0 w-24 h-24 border border-gray-200 rounded-md overflow-hidden">
                                 {item.image ? (
-                                  <img src={item.image} alt={item.name} className="w-full h-full object-cover" />
+                                  (() => {
+                                    // Use a local state for image error handling
+                                    const [imgError, setImgError] = useState(false);
+                                    const imgSrc = getImageUrl(item.image);
+                                    
+                                    return imgError ? (
+                                      <PizzaPlaceholder className="w-24 h-24" />
+                                    ) : (
+                                      <img 
+                                        src={imgSrc} 
+                                        alt={item.name} 
+                                        className="w-full h-full object-cover"
+                                        onError={() => setImgError(true)}
+                                      />
+                                    );
+                                  })()
                                 ) : (
-                                  <div className="w-full h-full bg-red-100 flex items-center justify-center text-red-600">
-                                    <svg className="h-12 w-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                                    </svg>
-                                  </div>
+                                  <PizzaPlaceholder className="w-24 h-24" />
                                 )}
                               </div>
 
